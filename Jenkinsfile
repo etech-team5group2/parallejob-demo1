@@ -21,6 +21,8 @@ pipeline{
 					sh'lscpu'
 				}
 			}
+			}
+			}
 			stage('3-subjob3-deploy'){
 				steps{
 					sh 'sudo systemctl status jenkins'
@@ -28,7 +30,7 @@ pipeline{
 				
 			}
 			
-		}
-	}
+		
+	
 }
 }
