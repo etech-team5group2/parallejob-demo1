@@ -11,19 +11,19 @@ pipeline{
 				parallel{
 					stage('1-subjob1'){
 						steps{
-							sh'action2'			
+							sh'lsblk'			
 				}
 				}
 				
 			
 			stage('2-subjob2-seccheck'){
 				steps{
-					sh'action3'
+					sh'lscpu'
 				}
 			}
 			stage('3-subjob3-deploy'){
 				steps{
-					sh 'action 3'
+					sh 'sudo systemctl status jenkins'
 				}
 				
 			}
