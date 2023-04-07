@@ -23,6 +23,8 @@ pipeline{
 					sh'action3'
 				}
 			}
+			}
+			}
 			stage('3-subjob3-deploy'){
 				steps{
 					'sh action 3'
@@ -30,7 +32,7 @@ pipeline{
 				
 			}
 			
-		}
-	}
+		
+	
 }
 }
