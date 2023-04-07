@@ -3,7 +3,9 @@ pipeline{
 		stages{
 			stage('1-clone'){
 				steps{ 
+ codefixfinal
 						sh'action1'
+
 				}
 			}
 
