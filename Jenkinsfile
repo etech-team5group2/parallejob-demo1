@@ -23,7 +23,7 @@ pipeline{
 			}
 			}
 			}
-			stage('3-subjob3-deploy'){
+			stage('3-Deploy'){
 				steps{
 					sh 'sudo systemctl status jenkins'
 				}
